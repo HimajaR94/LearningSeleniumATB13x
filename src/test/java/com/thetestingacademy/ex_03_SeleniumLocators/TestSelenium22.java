@@ -25,8 +25,8 @@ public class TestSelenium22 {
         driver.findElement(By.name("password")).sendKeys("Hacker@4321");
 
         //xpath - //button[@class="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"]
-
-        driver.findElement(By.xpath("//button[@class=\"oxd-button oxd-button--medium oxd-button--main orangehrm-login-button\"]")).click();
+        //xpath - //button[normalize-space()="Login"]
+        driver.findElement(By.xpath("//button[normalize-space()=\"Login\"]")).click();
 
         //div[@class="oxd-table orangehrm-employee-list"]
 
